@@ -42,7 +42,6 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
                     self?.updateUI(with: model)
                     break
                 case .failure(let error):
-                    print(error.localizedDescription)
                     self?.failedToFetchProfile()
                 }
             }
